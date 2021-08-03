@@ -59,5 +59,10 @@
 - [gauplus](https://github.com/bp0lr/gauplus)
 - [getJS](https://github.com/003random/getJS)
 - [subjs](https://github.com/lc/subjs)
-- 
+- [pyfuzz](https://github.com/AyoobAli/pyfuzz)
+- [go-url-fuzz](https://github.com/jaydhulia/go-url-fuzz)
+- [blc](https://github.com/stevenvachon/broken-link-checker)
+
+#### Wordlists
+
 
