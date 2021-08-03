@@ -28,5 +28,36 @@
 - [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
 - [aquatone](https://github.com/michenriksen/aquatone)
 - [Gowitness](https://github.com/sensepost/gowitness)
-- [
+- [WitnessMe](https://github.com/byt3bl33d3r/WitnessMe)
+
+#### Detect Web Technologies
+
+- [Wappalyzer](https://github.com/rverton/webanalyze)
+- [WhatWeb](https://github.com/urbanadventurer/whatweb)
+- [retire.js](https://github.com/RetireJS/retire.js)
+
+#### Content Discovery 
+
+- [Gobuster](https://github.com/OJ/gobuster)
+- [Feroxbuster](https://github.com/epi052/feroxbuster)
+- [dirsearch](https://github.com/maurosoria/dirsearch)
+- [bfac](https://github.com/mazen160/bfac)
+- [dirdar](https://github.com/M4DM0e/DirDar)
+- [ffuf](https://github.com/ffuf/ffuf)
+- [meg](https://github.com/tomnomnom/meg)
+- [megplus](https://github.com/EdOverflow/megplus)
+- [VAF](https://github.com/d4rckh/vaf)
+- [fuzzy](https://github.com/R0X4R/Fuzzy)
+
+#### Links 
+
+- [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+- [GoSpider](https://github.com/jaeles-project/gospider)
+- [HakRawler](https://github.com/hakluke/hakrawler)
+- [Waybackurls](https://github.com/tomnomnom/waybackurls)
+- [gau](https://github.com/lc/gau)
+- [gauplus](https://github.com/bp0lr/gauplus)
+- [getJS](https://github.com/003random/getJS)
+- [subjs](https://github.com/lc/subjs)
+- 
 
