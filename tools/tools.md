@@ -15,18 +15,18 @@
 
 #### Port Scanning Tools
 
--[massscan](https://github.com/robertdavidgraham/masscan)
--[armada](https://github.com/resyncgg/armada)
--[rustscan](https://github.com/RustScan/RustScan)
--[naabu](https://github.com/projectdiscovery/naabu)
--[nmap](https://github.com/nmap/nmap)
--[sandmap](https://github.com/trimstray/sandmap)
--[portscan.sh](https://github.com/KathanP19/portscan.sh) - a bash script for port scan automation
+- [massscan](https://github.com/robertdavidgraham/masscan)
+- [armada](https://github.com/resyncgg/armada)
+- [rustscan](https://github.com/RustScan/RustScan)
+- [naabu](https://github.com/projectdiscovery/naabu)
+- [nmap](https://github.com/nmap/nmap)
+- [sandmap](https://github.com/trimstray/sandmap)
+- [portscan.sh](https://github.com/KathanP19/portscan.sh) - a bash script for port scan automation
 
 #### Screenshotting tools
 
--[EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
--[aquatone](https://github.com/michenriksen/aquatone)
--[Gowitness](https://github.com/sensepost/gowitness)
--[
+- [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
+- [aquatone](https://github.com/michenriksen/aquatone)
+- [Gowitness](https://github.com/sensepost/gowitness)
+- [
 
