@@ -63,6 +63,7 @@
 - [go-url-fuzz](https://github.com/jaydhulia/go-url-fuzz)
 - [blc](https://github.com/stevenvachon/broken-link-checker)
 - [x8](https://github.com/Sh1Yo/x8)
+- [hakrawlerx8](https://github.com/improphethacker/hakrawlerx8chain) - chained x8 and hakrawler for more hidden parameter discovery
 
 #### Wordlists
 
