@@ -1,7 +1,5 @@
 > A collection of awesome one-liner scripts especially for bug bounty.
 
-This repository stores and houses various one-liner for bug bounty tips provided by me as well as contributed by the community.
-
 ### Local File Inclusion
 
 ```bash
