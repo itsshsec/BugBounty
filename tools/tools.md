@@ -62,6 +62,7 @@
 - [pyfuzz](https://github.com/AyoobAli/pyfuzz)
 - [go-url-fuzz](https://github.com/jaydhulia/go-url-fuzz)
 - [blc](https://github.com/stevenvachon/broken-link-checker)
+- [x8](https://github.com/Sh1Yo/x8)
 
 #### Wordlists
 
