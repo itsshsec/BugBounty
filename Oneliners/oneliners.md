@@ -154,7 +154,7 @@ ffuf -u https://FUZZ.rootdomain -w jhaddixall.txt -v | grep "| URL |" | awk '{pr
 ```
 
 ### Find All Allocated IP ranges for ASN given an IP address
-> wains.be
+
 
 ```bash
 whois -h whois.radb.net -i origin -T route $(whois -h whois.radb.net $1 | grep origin: | awk '{print $NF}' | head -1) | grep -w "route:" | awk '{print $NF}' | sort -n
@@ -186,28 +186,28 @@ cat domains.txt | httprobe | xargs curl | tok | tr '[:upper:]' '[:lower:]' | sor
 ```
 
 ### Extracts Juicy Informations
-> @Prial Islam Khan
+
 
 ```bash
 for sub in $(cat domains.txt);do /usr/bin/gron "https://otx.alienvault.com/otxapi/indicator/hostname/url_list/$sub?limit=100&page=1" | grep "\burl\b" | gron --ungron | jq |egrep -wi 'url' | awk '{print $2}' | sed 's/"//g'| sort -u | tee -a file.txt  ;done
 ```
 
 ### Find Subdomains TakeOver
-> @hahwul
+
 
 ```bash
 subfinder -d {target} >> domains ; assetfinder -subs-only {target} >> domains ; amass enum -norecursive -noalts -d {target} >> domains ; subjack -w domains -t 100 -timeout 30 -ssl -c ~/go/src/github.com/haccer/subjack/fingerprints.json -v 3 >> takeover ; 
 ```
 
 ### Get multiple target's Custom URLs from ParamSpider
-> @hahwul
+
 
 ```bash
 cat domains | xargs -I % python3 ~/tool/ParamSpider/paramspider.py -l high -o ./spidering/paramspider/% -d % ;
 ```
 
 ### URLs Probing with cURL + Parallel
-> @akita_zen
+
 
 ```bash
 cat alive-subdomains.txt | parallel -j50 -q curl -w 'Status:%{http_code}\t  Size:%{size_download}\t %{url_effective}\n' -o /dev/null -sk
@@ -274,7 +274,7 @@ curl -s $1 | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*" | sort | uniq | grep "
 ```
 
 ### Extract Endpoints from swagger.json
-> @zer0pwn
+
 
 ```bash
 curl -s https://domain.tld/v2/swagger.json | jq '.paths | keys[]'
